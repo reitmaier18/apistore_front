@@ -1,0 +1,15 @@
+<template>
+  <v-app-bar
+      color="deep-blue accent-4"
+      dense
+      dark
+  ></v-app-bar>
+</template>
+<script>
+  export default {
+    name: 'Navbar',
+    data: () => ({
+      appname: 'San Valentin'
+    }),
+  }
+</script>
