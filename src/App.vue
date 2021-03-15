@@ -9,9 +9,10 @@
 
   export default {
     name: 'Main',
+    backend: 'http://127.0.0.1:80/Personal/apistore/backend/controllers/index.php',
     components: {
       Navbar
-    }
+    },
   }
 </script>
 <style lang="scss">

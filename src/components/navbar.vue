@@ -38,12 +38,12 @@
           index: 2
         },
         insert: {
-          text: 'Add',
-          path: '/poem',
+          text: 'New Product',
+          path: '/addProduct',
           icon: 'mdi-plus-circle',
           index: 3
         },
       }
-    }),
+    })
   }
 </script>

@@ -12,7 +12,7 @@
     </v-img>
 
     <v-card-subtitle class="pb-0">
-      {{product.product_name}}
+      <b>{{product.product_name}}</b>
     </v-card-subtitle>
 
     <v-card-text class="text--primary">
@@ -25,15 +25,17 @@
       <v-btn
         color="orange"
         text
+        @click="edit(product.id)" 
       >
-        Share
+        Edit
       </v-btn>
 
       <v-btn
         color="orange"
         text
+        @click="dlte(product.id)"
       >
-        Explore
+        Delete
       </v-btn>
     </v-card-actions>
   </v-card>
@@ -53,7 +55,22 @@
       }
     },
     methods:{
-      
+      edit(id){
+        this.$router.push({
+          name: "editProduct",
+          params:{
+            id: id
+          }
+        })
+      },
+      dlte(id){
+        this.$router.push({
+          name: "quitProduct",
+          params:{
+            id: id
+          }
+        })
+      }
     }
   }
 </script>
